@@ -7,7 +7,8 @@ had 'repeate number' "animal1"'s the 'repeate number' "animal1"'s had 'repeate n
 num of guess is 3, if they type reset it will find if its a 1st guess
 or 2nd if its a 2nd add 1 if its a 1 mult by 3 and subtract 1 each guess.after 3rd guess if 0 += 3
 '''
-
+guesses={"correct": 1,"Wrong": not 1}
+print guesses["correct"]
 
 name=raw_input("Your name:")
 location=raw_input("A location:")
@@ -31,6 +32,17 @@ def question(arr):
 
 question(my_array)
 
-def quesing(n):
-    user_guess
-    for i in range(0,2):
+def quest(n):
+    user_guess = int(n)
+    for i in range(2, 0):
+        if user_guess == guesses["correct"]:
+            print "Your Correct!"
+            if i == 1:
+                i += 1
+        elif i > 0:
+            print "Incorrect you have "+i+" guesses remaining."
+            i -= 1
+        else:
+            print "Incorrect you have NO guesses remaining. You failed."
+
+quest(int(raw_input("Your answer:")))
