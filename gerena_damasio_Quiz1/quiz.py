@@ -11,7 +11,7 @@ def calc_area(h,w):#calculating the area
 
 calc_area(int(raw_input("Height:")),int(raw_input("Width:")))#area calced out real pretty
 
-def count_down(bottles):
+def count_down(bottles):# dem bottles are good
     for i in range(bottles,0,-1):
         print str( i ) + " Bottles of Beer on the Wall, "
         print str( i ) + " Bottles of Beer... take one down pass it around "
