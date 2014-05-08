@@ -1,10 +1,14 @@
+Damasio Eli Gerena's Notes for quiz
+
 #singe line comments!
-'''
+'''Multi-line
 name    Damasio Eli Gerena IV
 date    may 5th 2014
 class   dpw 2014 may
 '''
 #print "hello world!"
+
+#variables
 first_name='eli '
 last_name='de man'
 year_born=2014-1987

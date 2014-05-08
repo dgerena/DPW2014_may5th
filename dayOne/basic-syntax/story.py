@@ -58,9 +58,12 @@ def quest(n):
                     i *= 3
                 else:
                     print "Incorrect you have NO guesses remaining. You failed.deep deepest fail"
+                    break
             else:
                 print "Incorrect you have NO guesses remaining. You failed.one deep fail"
+                break
         else:
             print "Incorrect you have NO guesses remaining. You failed.outer fail"
+            break
 
 quest(raw_input("Your answer:"))
