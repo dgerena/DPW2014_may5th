@@ -7,7 +7,7 @@ def calc_area(h,w):#calculating the area
     if h == w :
         print "The area of your square is " + str(h * w)
     else:
-        print "The area of your rectangle is " + str(h *w)#math good
+        print "The area of your rectangle is " + str(h *w)#math good yup its good
 
 calc_area(int(raw_input("Height:")),int(raw_input("Width:")))
 
