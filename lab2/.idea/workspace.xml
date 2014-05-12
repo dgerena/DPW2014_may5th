@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/class-review/classes-review/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="600" selection-end="600" vertical-scroll-proportion="0.4" vertical-offset="0" max-vertical-offset="825">
+            <state line="42" column="19" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.5733333" vertical-offset="451" max-vertical-offset="1276">
               <folding />
             </state>
           </provider>
@@ -46,6 +46,7 @@
         <option value="$PROJECT_DIR$/lab2/css/style.css" />
         <option value="$PROJECT_DIR$/lab2/app.yaml" />
         <option value="$PROJECT_DIR$/lab2/pages.py" />
+        <option value="$PROJECT_DIR$/class-review/classes-review/main.py" />
       </list>
     </option>
   </component>
@@ -285,13 +286,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -355,7 +356,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class-review/classes-review/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="600" selection-end="600" vertical-scroll-proportion="0.4" vertical-offset="0" max-vertical-offset="825">
+        <state line="42" column="19" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.5733333" vertical-offset="451" max-vertical-offset="1276">
           <folding />
         </state>
       </provider>
