@@ -21,7 +21,7 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write('Hello world!')
         yoda =Character()
         yoda.name="Yoda"
-        yoda.age=900
+        yoda.age=-1
         yoda.gender="Male"
         yoda.occupation="Jedi Master"
         yoda.print_info()
@@ -42,16 +42,45 @@ class MainHandler(webapp2.RequestHandler):
         leia.age=luke.age
         leia.occupation="Princess"
         leia.print_info()
+        leia.squad_no="Pink 5"
+        print leia.squad_no
 
 class Character(object):
-    def __init__(self):
-        self.name =""
-        self.age =0
-        self.occupation =""
-        self.gender=""
+    def __init__(self):#constructor function, init
+        self.name = ""          #properties
+        self.__age = 0
+        self.occupation = ""
+        self.gender = ""
+        self.__rogue_squadron_no ="DEFAULT"
 
+    @property
+    def age(self):
+        return self.__age
+
+    @age.setter
+    def age(self,new_age):
+        if new_age <0 or new_age >1000:
+            print "Error with age input!!!!"
+        else:
+            self.__age=new_age
+
+    #all after are methods
     def print_info(self):
         print self.name+" is a(n) "+self.occupation
+
+    # getter, provides read access and stops write if no setter is present.
+    @property
+    def squad_no(self):
+        return self.__rogue_squadron_no
+
+    #setter, provides write access.
+    @squad_no.setter
+    def squad_no(self,new_no):
+        if new_no=="Pink 5":# example of in setter validation
+            new_no="Red 5"
+        #showing info -more code at once!
+        print new_no
+        self.__rogue_squadron_no=new_no
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
