@@ -24,18 +24,24 @@ class MainHandler(webapp2.RequestHandler):
         yoda.age=900
         yoda.gender="Male"
         yoda.occupation="Jedi Master"
+        yoda.print_info()
+        #instance.attribute
+        #instance.method()
+        #instance.property
 
         luke=Character()
         luke.name="Luke Skywalker"
         luke.gender="Male"
         luke.age="24"
         luke.occupation="Farmer"
+        luke.print_info()
 
         leia=Character()
         leia.name="Leia Organa"
         leia.gender="Female"
         leia.age=luke.age
         leia.occupation="Princess"
+        leia.print_info()
 
 class Character(object):
     def __init__(self):
