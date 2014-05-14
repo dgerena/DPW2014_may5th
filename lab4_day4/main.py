@@ -6,24 +6,7 @@
 # may 12th 2014
 #
 import webapp2
-'''
-Zhao Yun
-Health - 862
-Attack - 866
-Defense - 876
-Guan Yu
-Health - 872
-Attack - 880
-Defense - 872
-Zhang Fei
-Health - 876
-Attack - 884
-Defense - 862
-Liu Bei
-Health - 850
-Attack - 848
-Defense - 872
-'''
+
 class MainHandler(webapp2.RequestHandler):
     def get(self):# this will create the shu warriors and set there stats from the class Warriors
         shu=[{"name":"Guan_Yu","health":872,"Att":880,"defense":872},{"name":"Zhao_Yun","health":862,"Att":866,"defense":876},{"name":"Zhang_Fei","health":876,"Att":884,"defense":862},{"name":"Liu_Bei","health":850,"Att":848,"defense":872}]
@@ -49,13 +32,13 @@ class MainHandler(webapp2.RequestHandler):
             p1 = warriors[str(self.request.GET['p1'])]
             p2 = warriors[str(self.request.GET['p2'])]
 
-            while p1.health or p2.health >0:
+            while p1.Hp or p2.Hp >0:
                 p1.fight(p2.Att)
                 p2.fight(p1.Att)
-            if p1.health <= 0:
-                self.response.write(p2["name"]+" Won!")
-            elif p2.health <= 0:
-                self.response.write(p1["name"]+" Won!")
+            if p1.Hp <= 0:
+                self.response.write(str(self.request.GET['p2'])+" Won!")
+            elif p2.Hp <= 0:
+                self.response.write(str(self.request.GET['p1'])+" Won!")
             else:
                 self.response.write("DOUBLE SUICIDE!")
 
@@ -97,40 +80,12 @@ class Warriors(object):
     @Def.setter
     def Def(self,new_def):
         self.__defense=new_def
-'''
-<!Doctype html>
-<html>
-    <head>
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <style>ul li{list-style:none;}</style>
-    </head>
-    <body class=" col-md-12">
-        <header class="col-md-6 col-md-offset-4"><h1>Prepare for the battle ahead!</h1></header>
-        <section class="col-md-4">
-            <select class="char-1 form-control" >
-                <option > Select a Warrior: </option>
-            </select>
-        </section>
-        <section class="col-md-4" >
-            <h2 class="col-md-6">Name:health</h2>
-            <h2 class="col-md-6">Name:health</h2>
-            <button class="btn btn-lg">Fight</button>
-        </section>
-        <section class="col-md-4">
-            <select class="char-2">
-                <option > Select a Warrior: </option>
-            </select>
-        </section>
-        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
-</html>
-'''
+
 class Page(object):
     def __init__(self):
         self.option=""
         self.stats=""
+        self.result=""
         self.__open='''
 <!Doctype html>
 <html>
@@ -158,6 +113,7 @@ class Page(object):
                 <input type="hidden" name="p2" id="p2" val="" />
                 <button class="btn btn-lg">Fight</button>
             </form>
+            <h1>{self.result}</h1>
         </section>
         <section class="col-md-4">
             <select class="char-2 form-control">
