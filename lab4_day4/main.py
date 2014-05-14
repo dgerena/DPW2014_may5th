@@ -28,21 +28,26 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):# this will create the shu warriors and set there stats from the class Warriors
         self.response.write('Hello world!')
         shu=["Guan_Yu","Zhao_Yun","Zhang_Fei","Liu_Bei"]
-        Guan_Yu.health=872
-        Guan_Yu.attack=880
+        warriors=dict()
+        Guan_Yu.Hp=872
+        Guan_Yu.Att=880
         Guan_yu.defense=872
 
-        Zhao_Yun.health=862
-        Zhao_Yun.attack=866
+        Zhao_Yun.Hp=862
+        Zhao_Yun.Att=866
         Zhao_Yun.defense=876
 
-        Zhang_Fei.health=876
-        Zhang_Fei.attack=884
+        Zhang_Fei.Hp=876
+        Zhang_Fei.Att=884
         Zhang_Fei.defense=862
 
-        Liu_Bei.health=850
-        Liu_Bei.attack=848
+        Liu_Bei.Hp=850
+        Liu_Bei.Att=848
         Liu_Bei.defense=872
+        for per in shu:
+            warriors[per]= Warriors()
+        print warriors
+
 
 
 class Warriors(object):#warriors is the class that each shu soldier fits in
@@ -55,9 +60,23 @@ class Warriors(object):#warriors is the class that each shu soldier fits in
         self.__health-=attack
         return self.__health
 
+    @property
+    def Hp(self):
+        self.__health
+        pass
 
+    @hp.setter
+    def Hp(self,new_health):
+        self.__health=new_health
 
+    @property
+    def Att(self):
+        self.__attack
+        pass
 
+    @Att.setter
+    def Att(self,new_attack):
+        self.__attack=new_attack
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
