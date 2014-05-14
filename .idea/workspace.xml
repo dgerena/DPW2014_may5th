@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f5af9a2-3662-4cb5-8ed0-2d6b1de678e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab4_day4/main.py" afterPath="$PROJECT_DIR$/lab4_day4/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DPW2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2/class-review/classes-review/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="13" selection-start="1625" selection-end="1625" vertical-scroll-proportion="-48.4" vertical-offset="0" max-vertical-offset="2046">
+            <state line="67" column="25" selection-start="1898" selection-end="1898" vertical-scroll-proportion="-24.96" vertical-offset="850" max-vertical-offset="2046">
               <folding />
             </state>
           </provider>
@@ -37,7 +38,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4_day4/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="75" selection-start="971" selection-end="971" vertical-scroll-proportion="0.725" vertical-offset="454" max-vertical-offset="1474">
+            <state line="53" column="27" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.615" vertical-offset="674" max-vertical-offset="1540">
               <folding />
             </state>
           </provider>
@@ -432,14 +433,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/class-review/classes-review/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="13" selection-start="1625" selection-end="1625" vertical-scroll-proportion="-48.4" vertical-offset="0" max-vertical-offset="2046">
+        <state line="67" column="25" selection-start="1898" selection-end="1898" vertical-scroll-proportion="-24.96" vertical-offset="850" max-vertical-offset="2046">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4_day4/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="75" selection-start="971" selection-end="971" vertical-scroll-proportion="0.725" vertical-offset="454" max-vertical-offset="1474">
+        <state line="53" column="27" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.615" vertical-offset="674" max-vertical-offset="1540">
           <folding />
         </state>
       </provider>

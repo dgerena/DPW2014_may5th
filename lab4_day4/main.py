@@ -47,10 +47,13 @@ class MainHandler(webapp2.RequestHandler):
 
 class Warriors(object):#warriors is the class that each shu soldier fits in
     def __init__(self):
-        self.health=0
-        self.attack=0
-        self.defense=0
+        self.__health=0
+        self.__attack=0
+        self.__defense=0
 
+    def fight(self,attack):
+        self.__health-=attack
+        return self.__health
 
 
 
