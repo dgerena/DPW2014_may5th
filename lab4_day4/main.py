@@ -6,7 +6,6 @@
 # may 12th 2014
 #
 import webapp2
-import json
 '''
 Zhao Yun
 Health - 862
@@ -27,35 +26,38 @@ Defense - 872
 '''
 class MainHandler(webapp2.RequestHandler):
     def get(self):# this will create the shu warriors and set there stats from the class Warriors
-        shu=["Guan_Yu","Zhao_Yun","Zhang_Fei","Liu_Bei"]
+        shu=[{"name":"Guan_Yu","health":872,"Att":880,"defense":872},{"name":"Zhao_Yun","health":862,"Att":866,"defense":876},{"name":"Zhang_Fei","health":876,"Att":884,"defense":862},{"name":"Liu_Bei","health":850,"Att":848,"defense":872}]
 
         warriors = dict()
 
-        for per in shu:
-            warriors[per]= Warriors()
 
+        for per in shu:
+            warriors[per["name"]]= Warriors()
+            # vvv<-this uses the setter-I vvv<- this sets it from that instances object
+            warriors[per["name"]].Hp = per["health"]
+            warriors[per["name"]].Att = per["health"]
+            warriors[per["name"]].Def = per["health"]
         print warriors
 
-
-        warriors["Guan_Yu"].Hp=872
-        warriors["Guan_Yu"].Att=880
-        warriors["Guan_Yu"].defense=872
-
-        warriors["Zhao_Yun"].Hp=862
-        warriors["Zhao_Yun"].Att=866
-        warriors["Zhao_Yun"].defense=876
-
-        warriors["Zhang_Fei"].Hp=876
-        warriors["Zhang_Fei"].Att=884
-        warriors["Zhang_Fei"].defense=862
-
-        warriors["Liu_Bei"].Hp=850
-        warriors["Liu_Bei"].Att=848
-        warriors["Liu_Bei"].defense=872
-
         home_page=Page()
-        home_page.update(shu,warriors)
+        home_page.update(shu)
         self.response.write(home_page.print_out())
+
+
+        if self.request.GET:
+
+            p1 = warriors[str(self.request.GET['p1'])]
+            p2 = warriors[str(self.request.GET['p2'])]
+
+            while p1.health or p2.health >0:
+                p1.fight(p2.Att)
+                p2.fight(p1.Att)
+            if p1.health <= 0:
+                self.response.write(p2["name"]+" Won!")
+            elif p2.health <= 0:
+                self.response.write(p1["name"]+" Won!")
+            else:
+                self.response.write("DOUBLE SUICIDE!")
 
 
 #warriors is the class that each shu soldier fits in
@@ -66,8 +68,8 @@ class Warriors(object):
         self.__defense=0
 
     def fight(self,attack):
-        self.__health-=attack
-        return self.__health
+        self.health -= attack
+        return self.health
 
     @property
     def Hp(self):
@@ -86,12 +88,22 @@ class Warriors(object):
     @Att.setter
     def Att(self,new_attack):
         self.__attack=new_attack
+
+    @property
+    def Def(self):
+        self.__defense
+        pass
+
+    @Def.setter
+    def Def(self,new_def):
+        self.__defense=new_def
 '''
 <!Doctype html>
 <html>
     <head>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <style>ul li{list-style:none;}</style>
     </head>
     <body class=" col-md-12">
         <header class="col-md-6 col-md-offset-4"><h1>Prepare for the battle ahead!</h1></header>
@@ -117,8 +129,8 @@ class Warriors(object):
 '''
 class Page(object):
     def __init__(self):
-        self.warriorsObj = ""
         self.option=""
+        self.stats=""
         self.__open='''
 <!Doctype html>
 <html>
@@ -128,25 +140,31 @@ class Page(object):
     </head>
     <body class=" col-md-12">'''
         self.__content="""
-        <script>var warriors = {self.warriorsObj}</script>
+
         <header class="col-md-6 col-md-offset-4"><h1>An Ancient Battle Lies ahead!</h1></header>
         <section class="col-md-4">
             <select class="char-1 form-control" >
                 {self.option}
             </select>
             <ul id="p1-stats">
+                {self.stats}
             </ul>
         </section>
         <section class="col-md-4 text-center" >
             <h2 class="col-md-6">Name:health</h2>
             <h2 class="col-md-6">Name:health</h2>
-            <button class="btn btn-lg">Fight</button>
+            <form action="/" method="get">
+                <input type="hidden" name="p1" id="p1" val="" />
+                <input type="hidden" name="p2" id="p2" val="" />
+                <button class="btn btn-lg">Fight</button>
+            </form>
         </section>
         <section class="col-md-4">
             <select class="char-2 form-control">
                 {self.option}
             </select>
             <ul id="p2-stats">
+                {self.stats}
             </ul>
         </section>
         """
@@ -174,10 +192,10 @@ class Page(object):
     def print_out(self):
         return self.__all
 
-    def update(self,shu,warriors):
-        self.warriorsObj = json.dumps(warriors)
+    def update(self,shu):
         for i in shu:
-            self.option= self.option+"<option >"+i+"</option>"
+            self.stats=self.stats+"<li ><h3>"+i["name"]+"</h3>"+"<ul>"+"<li>Health:"+str(i["health"])+"</li>"+"<li>Attack:"+str(i["Att"])+"</li>"+"<li>Defence:"+str(i["defense"])+"</li></ul></li>"
+            self.option= self.option+"<option >"+i["name"]+"</option>"
         #**locals() replaces all the {} with the values of the corresponding varaiables
         self.__all=self.__all.format(**locals())
 app = webapp2.WSGIApplication([
