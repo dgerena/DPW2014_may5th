@@ -28,29 +28,34 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):# this will create the shu warriors and set there stats from the class Warriors
         self.response.write('Hello world!')
         shu=["Guan_Yu","Zhao_Yun","Zhang_Fei","Liu_Bei"]
-        warriors=dict()
-        Guan_Yu.Hp=872
-        Guan_Yu.Att=880
-        Guan_yu.defense=872
 
-        Zhao_Yun.Hp=862
-        Zhao_Yun.Att=866
-        Zhao_Yun.defense=876
+        warriors = dict()
 
-        Zhang_Fei.Hp=876
-        Zhang_Fei.Att=884
-        Zhang_Fei.defense=862
-
-        Liu_Bei.Hp=850
-        Liu_Bei.Att=848
-        Liu_Bei.defense=872
         for per in shu:
             warriors[per]= Warriors()
+
         print warriors
 
 
+        warriors["Guan_Yu"].Hp=872
+        warriors["Guan_Yu"].Att=880
+        warriors["Guan_Yu"].defense=872
 
-class Warriors(object):#warriors is the class that each shu soldier fits in
+        warriors["Zhao_Yun"].Hp=862
+        warriors["Zhao_Yun"].Att=866
+        warriors["Zhao_Yun"].defense=876
+
+        warriors["Zhang_Fei"].Hp=876
+        warriors["Zhang_Fei"].Att=884
+        warriors["Zhang_Fei"].defense=862
+
+        warriors["Liu_Bei"].Hp=850
+        warriors["Liu_Bei"].Att=848
+        warriors["Liu_Bei"].defense=872
+
+
+#warriors is the class that each shu soldier fits in
+class Warriors(object):
     def __init__(self):
         self.__health=0
         self.__attack=0
@@ -65,7 +70,7 @@ class Warriors(object):#warriors is the class that each shu soldier fits in
         self.__health
         pass
 
-    @hp.setter
+    @Hp.setter
     def Hp(self,new_health):
         self.__health=new_health
 
