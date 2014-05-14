@@ -13,6 +13,8 @@ class MainHandler(webapp2.RequestHandler):
 
         warriors = dict()
 
+        home_page=Page()
+
 
         for per in shu:
             warriors[per["name"]]= Warriors()
@@ -21,10 +23,6 @@ class MainHandler(webapp2.RequestHandler):
             warriors[per["name"]].Att = per["health"]
             warriors[per["name"]].Def = per["health"]
         print warriors
-
-        home_page=Page()
-        home_page.update(shu)
-        self.response.write(home_page.print_out())
 
 
         if self.request.GET:
@@ -36,12 +34,14 @@ class MainHandler(webapp2.RequestHandler):
                 p1.fight(p2.Att)
                 p2.fight(p1.Att)
             if p1.Hp <= 0:
-                self.response.write(str(self.request.GET['p2'])+" Won!")
+                home_page.update(str(self.request.GET['p1'])+" Won!",shu)
             elif p2.Hp <= 0:
-                self.response.write(str(self.request.GET['p1'])+" Won!")
+                home_page.update(str(self.request.GET['p1'])+" Won!",shu)
             else:
-                self.response.write("DOUBLE SUICIDE!")
-
+                home_page.update("DOUBLE SUICIDE!",shu)
+        else:
+            home_page.update("",shu)
+        self.response.write(home_page.print_out())
 
 #warriors is the class that each shu soldier fits in
 class Warriors(object):
@@ -148,7 +148,8 @@ class Page(object):
     def print_out(self):
         return self.__all
 
-    def update(self,shu):
+    def update(self,result,shu):
+        self.result = result
         for i in shu:
             self.stats=self.stats+"<li ><h3>"+i["name"]+"</h3>"+"<ul>"+"<li>Health:"+str(i["health"])+"</li>"+"<li>Attack:"+str(i["Att"])+"</li>"+"<li>Defence:"+str(i["defense"])+"</li></ul></li>"
             self.option= self.option+"<option >"+i["name"]+"</option>"
