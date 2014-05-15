@@ -106,8 +106,8 @@ class Page(object):
             </ul>
         </section>
         <section class="col-md-4 text-center" >
-            <h2 class="col-md-6">Name:health</h2>
-            <h2 class="col-md-6">Name:health</h2>
+            <h2 class="col-md-6" id="p1Name"></h2>
+            <h2 class="col-md-6" id="p2Name"></h2>
             <form action="/" method="get">
                 <input type="hidden" name="p1" id="p1" val="" />
                 <input type="hidden" name="p2" id="p2" val="" />
