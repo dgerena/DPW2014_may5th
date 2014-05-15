@@ -1,4 +1,4 @@
-application: lab5_damasio_gerena
+application: lab5-damasio-gerena
 version: 1
 runtime: python27
 api_version: 1

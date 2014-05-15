@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5af9a2-3662-4cb5-8ed0-2d6b1de678e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab5_damasio_gerena/app.yaml" afterPath="$PROJECT_DIR$/lab5_damasio_gerena/app.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab5_damasio_gerena/main.py" afterPath="$PROJECT_DIR$/lab5_damasio_gerena/main.py" />
     </list>
     <ignored path="DPW2014.iws" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab5_damasio_gerena/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="40" selection-start="3797" selection-end="3797" vertical-scroll-proportion="0.8043202" vertical-offset="2051" max-vertical-offset="2926">
+            <state line="24" column="42" selection-start="373" selection-end="373" vertical-scroll-proportion="0.30749682" vertical-offset="286" max-vertical-offset="4510">
               <folding />
             </state>
           </provider>
@@ -37,7 +38,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inheritance-abstraction/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="23" selection-start="1114" selection-end="1117" vertical-scroll-proportion="-21.8" vertical-offset="555" max-vertical-offset="1892">
+            <state line="50" column="8" selection-start="1102" selection-end="1117" vertical-scroll-proportion="-44.0" vertical-offset="0" max-vertical-offset="1892">
               <folding />
             </state>
           </provider>
@@ -482,14 +483,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inheritance-abstraction/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="23" selection-start="1114" selection-end="1117" vertical-scroll-proportion="-21.8" vertical-offset="555" max-vertical-offset="1892">
+        <state line="50" column="8" selection-start="1102" selection-end="1117" vertical-scroll-proportion="-44.0" vertical-offset="0" max-vertical-offset="1892">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab5_damasio_gerena/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="40" selection-start="3797" selection-end="3797" vertical-scroll-proportion="0.8043202" vertical-offset="2051" max-vertical-offset="2926">
+        <state line="24" column="42" selection-start="373" selection-end="373" vertical-scroll-proportion="0.30749682" vertical-offset="286" max-vertical-offset="4510">
           <folding />
         </state>
       </provider>
