@@ -21,9 +21,15 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         bessy = Cow()
         bessy.sound = 'moo'
+        main_page=Page()
+        self.anim_house=[Horse,Cow,Pig]
 
-        self.response.write( bessy.sound )
+        self.response.write(main_page.print_out())
 
+    #will get instantiated animals and place into pen, returning a array.
+
+
+#animal stuff--------
 class Animal(object):
     def __init__(self):
         self._phylum=""
@@ -35,7 +41,7 @@ class Animal(object):
         self._lifespan=0
         self._habitat=""
         self._geolocation="Earth"
-        self.sound="WOOOF!"
+        self.sound="Air!"
 
     def sound(self):
 
@@ -77,6 +83,64 @@ class Cow(Animal):
         self._habitat=""
         self._geolocation="Earth"
 
+#page script----
+
+class Page(object):
+    def __init__(self):
+        self._logo="Logo tbd"
+        self._nav="Nav items"
+        self._name="Name with desired properties"
+        self._stats="Properties"
+        self._result=""
+        self._title="Unset"
+
+        self.__open='''
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body class=" col-md-12">'''
+
+        self.__content="""
+        <header class="col-md-12">
+            <h1>{self._logo}</h1>
+            <nav>
+                <li>{self._nav}</li>
+            </nav>
+        </header>
+        <section class="col-md-4">
+            <ul>
+                <li>{self._name}</li>
+            </ul>
+        </section>
+        <div class="main-content">
+            <h3>{self._name}</h1>
+            <p>{self._stats}</p>
+        </div>
+        <footer></footer>
+        """
+
+        self.__close='''
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
+        '''
+        self.__all=self.__open+self.__content+self.__close
+
+    def print_out(self):
+        return self.__all
+
+    def update(self,result,shu):
+        self.result = result
+        for i in self.anim_house:
+            self.stats=self.stats+"<li ><h3>"+i["name"]+"</h3>"+"<ul>"+"<li>Health:"+str(i["health"])+"</li>"+"<li>Attack:"+str(i["Att"])+"</li>"+"<li>Defence:"+str(i["defense"])+"</li></ul></li>"
+            self.option= self.option+"<option >"+i["name"]+"</option>"
+        #**locals() replaces all the {} with the values of the corresponding varaiables
+        self.__all=self.__all.format(**locals())
 
 #               #   #First Attempt # ALL WRONG
 # #Kingdom

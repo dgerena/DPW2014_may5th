@@ -15,7 +15,6 @@ class MainHandler(webapp2.RequestHandler):
 
         home_page=Page()
 
-
         for per in shu:
             warriors[per["name"]]= Warriors()
             # vvv<-this uses the setter-I vvv<- this sets it from that instances object
@@ -23,7 +22,6 @@ class MainHandler(webapp2.RequestHandler):
             warriors[per["name"]].Att = per["health"]
             warriors[per["name"]].Def = per["health"]
         print warriors
-
 
         if self.request.GET:
 
