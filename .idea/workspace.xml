@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5af9a2-3662-4cb5-8ed0-2d6b1de678e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab5_damasio_gerena/app.yaml" afterPath="$PROJECT_DIR$/lab5_damasio_gerena/app.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab5_damasio_gerena/main.py" afterPath="$PROJECT_DIR$/lab5_damasio_gerena/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DPW2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,16 +28,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab5_damasio_gerena/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="42" selection-start="373" selection-end="373" vertical-scroll-proportion="0.30749682" vertical-offset="286" max-vertical-offset="4510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inheritance-abstraction/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="8" selection-start="1102" selection-end="1117" vertical-scroll-proportion="-44.0" vertical-offset="0" max-vertical-offset="1892">
+            <state line="19" column="13" selection-start="231" selection-end="231" vertical-scroll-proportion="0.5031766" vertical-offset="22" max-vertical-offset="4510">
               <folding />
             </state>
           </provider>
@@ -133,20 +123,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPW2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPW2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inheritance-abstraction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -169,6 +145,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.." />
       <recent name="C:\Users\damasio\Dropbox\DPW2014\dayOne\basic-syntax" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab5_damasio_gerena" />
     </key>
   </component>
   <component name="RunManager" selected="Python.story">
@@ -345,11 +324,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -371,126 +350,92 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dayOne/basic-syntax/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1650">
-          <folding />
-        </state>
+        <state line="35" column="0" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1650" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dayOne/basic-syntax/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.0" vertical-offset="1056" max-vertical-offset="1200">
-          <folding />
-        </state>
+        <state line="66" column="0" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.0" vertical-offset="1056" max-vertical-offset="1200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dayOne/basic-syntax/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1431" selection-end="1431" vertical-scroll-proportion="-0.0" vertical-offset="770" max-vertical-offset="1650">
-          <folding />
-        </state>
+        <state line="35" column="0" selection-start="1431" selection-end="1431" vertical-scroll-proportion="-0.0" vertical-offset="770" max-vertical-offset="1650" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/class-review/classes-review/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4_day4/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="152" selection-end="152" vertical-scroll-proportion="0.33471647" vertical-offset="0" max-vertical-offset="723">
-          <folding />
-        </state>
+        <state line="11" column="16" selection-start="152" selection-end="152" vertical-scroll-proportion="0.33471647" vertical-offset="0" max-vertical-offset="723" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/class-review/classes-review/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="25" selection-start="1898" selection-end="1898" vertical-scroll-proportion="1.4675" vertical-offset="300" max-vertical-offset="2046">
-          <folding />
-        </state>
+        <state line="67" column="25" selection-start="1898" selection-end="1898" vertical-scroll-proportion="1.4675" vertical-offset="300" max-vertical-offset="2046" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple-form/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="96" selection-end="125" vertical-scroll-proportion="0.1925" vertical-offset="0" max-vertical-offset="800">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="96" selection-end="125" vertical-scroll-proportion="0.1925" vertical-offset="0" max-vertical-offset="800" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dayOne/basic-syntax/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="170" selection-end="170" vertical-scroll-proportion="14.08" vertical-offset="528" max-vertical-offset="1760">
-          <folding />
-        </state>
+        <state line="8" column="21" selection-start="170" selection-end="170" vertical-scroll-proportion="14.08" vertical-offset="528" max-vertical-offset="1760" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4_day4/index.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4_day4/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="412" selection-end="412" vertical-scroll-proportion="-9.68" vertical-offset="0" max-vertical-offset="440">
-          <folding />
-        </state>
+        <state line="11" column="25" selection-start="412" selection-end="412" vertical-scroll-proportion="-9.68" vertical-offset="0" max-vertical-offset="440" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/getters-setters/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="504" selection-end="504" vertical-scroll-proportion="0.5870394" vertical-offset="0" max-vertical-offset="1386">
-          <folding />
-        </state>
+        <state line="21" column="23" selection-start="504" selection-end="504" vertical-scroll-proportion="0.5870394" vertical-offset="0" max-vertical-offset="1386" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inheritance-abstraction/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="-8.8" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
+        <state line="10" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="-8.8" vertical-offset="0" max-vertical-offset="638" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../notes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="58" selection-end="58" vertical-scroll-proportion="0.054187194" vertical-offset="0" max-vertical-offset="2970">
-          <folding />
-        </state>
+        <state line="2" column="21" selection-start="58" selection-end="58" vertical-scroll-proportion="0.054187194" vertical-offset="0" max-vertical-offset="2970" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inheritance-abstraction/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0825" vertical-offset="0" max-vertical-offset="800">
-          <folding />
-        </state>
+        <state line="3" column="8" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0825" vertical-offset="0" max-vertical-offset="800" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4_day4/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="18" selection-start="3658" selection-end="3658" vertical-scroll-proportion="3.466328" vertical-offset="0" max-vertical-offset="3652">
-          <folding />
-        </state>
+        <state line="124" column="18" selection-start="3658" selection-end="3658" vertical-scroll-proportion="3.466328" vertical-offset="0" max-vertical-offset="3652" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inheritance-abstraction/index.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inheritance-abstraction/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="8" selection-start="1102" selection-end="1117" vertical-scroll-proportion="-44.0" vertical-offset="0" max-vertical-offset="1892">
-          <folding />
-        </state>
+        <state line="50" column="8" selection-start="1102" selection-end="1117" vertical-scroll-proportion="1.3977128" vertical-offset="0" max-vertical-offset="1892" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab5_damasio_gerena/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="42" selection-start="373" selection-end="373" vertical-scroll-proportion="0.30749682" vertical-offset="286" max-vertical-offset="4510">
+        <state line="19" column="13" selection-start="231" selection-end="231" vertical-scroll-proportion="0.5031766" vertical-offset="22" max-vertical-offset="4510">
           <folding />
         </state>
       </provider>
