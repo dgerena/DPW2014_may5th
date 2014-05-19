@@ -14,19 +14,33 @@
 # Geolocation
 #
 
-
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        bessy = Cow()
-        bessy.sound = 'moo'
+        whiteCastle=Horse()
+        whiteCastle._geolocation="North Eastern USA."
+        whiteCastle._sound="Gurgle Gurgle"
+
+        bacon=Pig()
+        bacon._geolocation="My belly."
+        bacon._sound="NomNomNom"
+
+        steak = Cow()
+        steak._geolocation="My Fridge."
+        steak._sound = 'Sizzle sizzle.'
+
+        food=[whiteCastle,bacon,steak]
+        for i in food:
+            self.response.write(i._sound)
+            # self.response.write(i)
+
         main_page=Page()
-        self.anim_house=[Horse,Cow,Pig]
 
-        self.response.write(main_page.print_out())
 
-    #will get instantiated animals and place into pen, returning a array.
+        #will get instantiated animals and place into pen, returning a array.
+
+
 
 
 #animal stuff--------
@@ -40,12 +54,17 @@ class Animal(object):
         self._image=""
         self._lifespan=0
         self._habitat=""
-        self._geolocation="Earth"
-        self.sound="Air!"
+        self._geolocation="My Kitchen"
+        self._sound="Air!"
 
+    #----- Hey Rebecca is this a way to do this also? K thanks bye.
+    @property
     def sound(self):
-
         print self.sound
+
+    @sound.setter
+    def sound(self,value):
+        self._sound = value
 
 class Horse(Animal):
     def __init__(self):
@@ -132,9 +151,10 @@ class Page(object):
         self.__all=self.__open+self.__content+self.__close
 
     def print_out(self):
+
         return self.__all
 
-    def update(self,result,shu):
+    def update(self,result,):
         self.result = result
         for i in self.anim_house:
             self.stats=self.stats+"<li ><h3>"+i["name"]+"</h3>"+"<ul>"+"<li>Health:"+str(i["health"])+"</li>"+"<li>Attack:"+str(i["Att"])+"</li>"+"<li>Defence:"+str(i["defense"])+"</li></ul></li>"
