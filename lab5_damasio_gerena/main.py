@@ -18,24 +18,42 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        main_page=Page()
+
         whiteCastle=Horse()
+        whiteCastle._name="White Castle Burger"
         whiteCastle._geolocation="North Eastern USA."
-        whiteCastle._sound="Gurgle Gurgle"
+        whiteCastle.sound="Gurgle Gurgle (As heard from stomach.)"
+        whiteCastle._image="http://assets3.whitecastle.com/system/pages/photos/2/large/food.jpg?1255036013"
+        whiteCastle._habitat="White Castle Fast food restaurants."
+        whiteCastle._lifespan="5 min. from purchase."
+        whiteCastle._wasA="Horse"
 
         bacon=Pig()
+        bacon._name="Bacon"
         bacon._geolocation="My belly."
-        bacon._sound="NomNomNom"
+        bacon.sound="NomNomNom"
+        bacon._image="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/dd/49/dd496638625503072eac92a428654527.jpg?itok=rpImMEqz"
+        bacon._lifespan="7 days unrefrigerated. 2 days in my kitchen."
+        bacon._wasA="Pig"
 
         steak = Cow()
+        steak._name="Steak"
         steak._geolocation="My Fridge."
-        steak._sound = 'Sizzle sizzle.'
+        steak.sound = 'Sizzle sizzle.'
+        steak._image="https://c2.staticflickr.com/4/3033/2589279995_f29574b45e_z.jpg"
+        steak._lifespan="7 days unrefrigerated. 2 days in my kitchen."
+        steak._wasA="Cow"
 
         food=[whiteCastle,bacon,steak]
-        for i in food:
-            self.response.write(i._sound)
-            # self.response.write(i)
-
-        main_page=Page()
+        if self.request.GET:
+            Animal = self.request.GET['Animal']
+            for i in food:
+                if i._genus == Animal:
+                    print i
+                    self.response.write(main_page.print_out(food,i))
+        else:
+            self.response.write(main_page.print_out(food,""))
 
 
         #will get instantiated animals and place into pen, returning a array.
@@ -46,21 +64,22 @@ class MainHandler(webapp2.RequestHandler):
 #animal stuff--------
 class Animal(object):
     def __init__(self):
-        self._phylum=""
-        self._sci_class=""
+        self._phylum="Chordata"
+        self._sci_class="Mammalia"
         self._order=""
         self._family=""
         self._genus=""
         self._image=""
         self._lifespan=0
-        self._habitat=""
+        self._habitat="Your local Grocer."
         self._geolocation="My Kitchen"
+        self._name=""
         self._sound="Air!"
 
     #----- Hey Rebecca is this a way to do this also? K thanks bye.
     @property
     def sound(self):
-        print self.sound
+        return self._sound
 
     @sound.setter
     def sound(self,value):
@@ -69,36 +88,30 @@ class Animal(object):
 class Horse(Animal):
     def __init__(self):
         Animal.__init__(self)
-        self._phylum="Chordata"
-        self._sci_class="Mammalia"
         self._order="Perissodactyla"
         self._family="Equidae"
         self._genus="Equus"
-        self._lifespan=0
+        self._lifespan=25
         self._habitat=""
         self._geolocation="Earth"
 
 class Pig(Animal):
     def __init__(self):
         Animal.__init__(self)
-        self._phylum="Chordata"
-        self._sci_class="Mammalia"
         self._order="Artiodactyla"
         self._family="Suidae"
         self._genus="Sus"
-        self._lifespan=0
+        self._lifespan=8
         self._habitat=""
         self._geolocation="Earth"
 
 class Cow(Animal):
     def __init__(self):
         Animal.__init__(self)
-        self._phylum="Chordata"
-        self._sci_class="Mammalia"
         self._order="Artiodactyla"
         self._family="Bovidae"
         self._genus="Bos"
-        self._lifespan=0
+        self._lifespan=15
         self._habitat=""
         self._geolocation="Earth"
 
@@ -106,36 +119,31 @@ class Cow(Animal):
 
 class Page(object):
     def __init__(self):
-        self._logo="Logo tbd"
-        self._nav="Nav items"
-        self._name="Name with desired properties"
-        self._stats="Properties"
+        self._logo="Consumption Junction"
+        self._nav=""
+        self._name=""
+        self._stats=""
         self._result=""
-        self._title="Unset"
+        self._title="ALL THE FOODS!"
 
         self.__open='''
 <!Doctype html>
 <html>
     <head>
-        <title></title>
+        <title>{self._title}</title>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
     <body class=" col-md-12">'''
 
         self.__content="""
-        <header class="col-md-12">
-            <h1>{self._logo}</h1>
-            <nav>
-                <li>{self._nav}</li>
+        <header class="col-md-8 col-md-offset-2">
+            <h1 class="col-md-4">{self._logo}</h1>
+            <nav class="col-md-8">
+                {self._nav}
             </nav>
         </header>
-        <section class="col-md-4">
-            <ul>
-                <li>{self._name}</li>
-            </ul>
-        </section>
-        <div class="main-content">
+        <div class="main-content col-md-8 col-md-offset-2">
             <h3>{self._name}</h1>
             <p>{self._stats}</p>
         </div>
@@ -150,17 +158,26 @@ class Page(object):
         '''
         self.__all=self.__open+self.__content+self.__close
 
-    def print_out(self):
-
+    def print_out(self,food,result):
+        for i in food:
+            self._nav = self._nav +"<li class='col-md-3'>"+"<a href='/?Animal="+i._genus+"'+>"+str(i._genus)+"</a>"+"</li>"
+        if result != "":
+            self.update(result)
+        self.__all=self.__all.format(**locals())
         return self.__all
 
-    def update(self,result,):
+    def update(self,result):# changes the page based on where you are.
         self.result = result
-        for i in self.anim_house:
-            self.stats=self.stats+"<li ><h3>"+i["name"]+"</h3>"+"<ul>"+"<li>Health:"+str(i["health"])+"</li>"+"<li>Attack:"+str(i["Att"])+"</li>"+"<li>Defence:"+str(i["defense"])+"</li></ul></li>"
-            self.option= self.option+"<option >"+i["name"]+"</option>"
+
+        self._stats= self._stats+"<li>Phylum: "+result._phylum+"</li>"+\
+                     "<li>Class: "+result._sci_class+"</li>"+\
+                     "<li>Order: "+result._order+"</li>"+\
+                     "<li>Family: "+result._family+"</li>"+"<li>Genus: "+\
+                     result._genus+"</li>"+"<li>"+"<a href='"+result._image+"'><img class='imgMove' src='"+result._image+"'/></a>"+"</li>"+"<li>Lifespan: "+str(result._lifespan)+"</li>"+\
+                     "<li>Habitat: "+result._habitat+"</li>"+\
+                     "<li>Geolocation: "+result._geolocation+"</li>"+"<li>Originated from a "+result._wasA+".</li>"+"<li>Sound: "+result._sound+"</li>"
         #**locals() replaces all the {} with the values of the corresponding varaiables
-        self.__all=self.__all.format(**locals())
+
 
 #               #   #First Attempt # ALL WRONG
 # #Kingdom

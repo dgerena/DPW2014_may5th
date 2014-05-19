@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - Beverly Hills, CA</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Beverly_Hills__CA/*http://weather.yahoo.com/forecast/USCA0090_f.html</link>
+<description>Yahoo! Weather for Beverly Hills, CA</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 19 May 2014 1:50 pm PDT</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="Beverly Hills" region="CA"   country="US"/>
+<yweather:units temperature="F" distance="mi" pressure="in" speed="mph"/>
+<yweather:wind chill="70"   direction="240"   speed="10" />
+<yweather:atmosphere humidity="59"  visibility="10"  pressure="29.94"  rising="0" />
+<yweather:astronomy sunrise="5:48 am"   sunset="7:51 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for Beverly Hills, CA at 1:50 pm PDT</title>
+<geo:lat>34.08</geo:lat>
+<geo:long>-118.4</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Beverly_Hills__CA/*http://weather.yahoo.com/forecast/USCA0090_f.html</link>
+<pubDate>Mon, 19 May 2014 1:50 pm PDT</pubDate>
+<yweather:condition  text="Fair"  code="34"  temp="70"  date="Mon, 19 May 2014 1:50 pm PDT" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/34.gif"/><br />
+<b>Current Conditions:</b><br />
+Fair, 70 F<BR />
+<BR /><b>Forecast:</b><BR />
+Mon - Sunny. High: 71 Low: 57<br />
+Tue - Mostly Sunny. High: 70 Low: 56<br />
+Wed - Sunny. High: 70 Low: 56<br />
+Thu - Partly Cloudy. High: 72 Low: 59<br />
+Fri - Sunny. High: 74 Low: 60<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Beverly_Hills__CA/*http://weather.yahoo.com/forecast/USCA0090_f.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<yweather:forecast day="Mon" date="19 May 2014" low="57" high="71" text="Sunny" code="32" />
+<yweather:forecast day="Tue" date="20 May 2014" low="56" high="70" text="Mostly Sunny" code="34" />
+<yweather:forecast day="Wed" date="21 May 2014" low="56" high="70" text="Sunny" code="32" />
+<yweather:forecast day="Thu" date="22 May 2014" low="59" high="72" text="Partly Cloudy" code="30" />
+<yweather:forecast day="Fri" date="23 May 2014" low="60" high="74" text="Sunny" code="32" />
+<guid isPermaLink="false">USCA0090_2014_05_23_7_00_PDT</guid>
+</item>
+</channel>
+</rss>
+
+<!-- fan486.sports.gq1.yahoo.com Mon May 19 21:51:27 PST 2014 -->

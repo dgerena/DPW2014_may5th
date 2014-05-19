@@ -1,6 +1,23 @@
 body{
-    background-color:#ccc;
+    background-color:white;
+    
 }
 header{
     width:100%;
+    background-color:#ccc;
+}
+li{
+    background-color: white;
+    border:solid 1px #ccc; 
+    list-style: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: inline;
+}
+
+imgMove{
+    float:right;
+}
+.main-content{
+    background-color: #ccc;
 }
