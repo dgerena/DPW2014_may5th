@@ -8,8 +8,10 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         fiveseven=Pistol()
-        fiveseven.ProjType()
-        print fiveseven.ProjType
+        fiveseven.name="Five Seven"
+        fiveseven._size="5.556X7"
+        fiveseven._ammoCount="30"
+        print fiveseven._ammoCount+fiveseven.name+fiveseven._projectile
         self.response.write('Hello world!')
 
 # I will make a class that shows the relation between guns.
@@ -19,7 +21,7 @@ class Gun(object):
         self.name=""
         self._size=""
         self._ammoCount=""
-        self.__projectile=""
+        self._projectile=""
 
     def Fire(self,weapon):
         def __init__(self):
@@ -29,21 +31,29 @@ class Gun(object):
                 return "Nothing to fire."
 
 
-    @property
-    def ProjType(self):
-        def __init__(self):
-            return self.__projectile
-
-    @ProjType.setter
-    def ProjType(self,newType):
-        def __init__(self):
-            self.__projectile = newType
+    # @property
+    # def ProjType(self):
+    #     def __init__(self):
+    #         return self.__projectile
+    #
+    # @ProjType.setter
+    # def ProjType(self,newType):
+    #     def __init__(self):
+    #         self.__projectile = newType
 
 class Pistol(Gun):
     def __init__(self):
         Gun.__init__(self)
-        self.name="Five-Seven"
-        self._size="5.56X7"
+        self.name="Pistol"
+        self._size="9mm"
+        self._ammoCount="10+"
+        self._projectile="Bullet"
+
+class FiveSeven(Pistol):
+    def __init__(self):
+        Pistol.__init__(self)
+        self.name="FiveSeven"
+        self._size="5.556X7"
         self._ammoCount="30"
 
 app = webapp2.WSGIApplication([
