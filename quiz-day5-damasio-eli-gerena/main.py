@@ -8,6 +8,8 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         fiveseven=Pistol()
+        fiveseven.ProjType("bullet")
+        print fiveseven.ProjType
         self.response.write('Hello world!')
 
 # I will make a class that shows the relation between guns.
@@ -17,7 +19,7 @@ class Gun(object):
         self.name=""
         self._size=""
         self._ammoCount=""
-        self.__projectile
+        self.__projectile=""
 
     def Fire(self,weapon):
         def __init__(self):
@@ -35,7 +37,7 @@ class Gun(object):
     @ProjType.setter
     def ProjType(self,newType):
         def __init__(self):
-            self.proj=newType
+            self.__projectile = newType
 
 class Pistol(Gun):
     def __init__(self):
@@ -43,9 +45,6 @@ class Pistol(Gun):
         self.name="Five-Seven"
         self._size="5.56X7"
         self._ammoCount="30"
-        bullet=self.proj
-        print bullet
-
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
