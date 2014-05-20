@@ -8,7 +8,7 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         fiveseven=Pistol()
-        fiveseven.ProjType("bullet")
+        fiveseven.ProjType()
         print fiveseven.ProjType
         self.response.write('Hello world!')
 
