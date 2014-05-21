@@ -22,8 +22,13 @@ class MainHandler(webapp2.RequestHandler):
         opener = urllib2.build_opener()
         data=opener.open(req)
         obj=json.load(data)
-        for i in obj:
-            self.response.write('<br />'+str(obj[i]))
+
+        for i in obj['data']:
+            self.response.write('<br />'+str(i['name']))
+            for j in i:
+                #print j
+                pass
+                #self.response.write('<br />'+str(j))
         # else:
         #     print "doesnt work."
 
