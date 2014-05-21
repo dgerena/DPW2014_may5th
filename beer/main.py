@@ -12,6 +12,8 @@ class MainHandler(webapp2.RequestHandler):
         url ="http://api.brewerydb.com/v2/?key=0a1a3d54ec43b25abe64eaaff2c12970"
         req =urllib2.request(url)
         opener = urllib2.build_opener()
+        data=opener.open(req)
+        print data
 
         self.response.write('Hello world!')
 app = webapp2.WSGIApplication([
