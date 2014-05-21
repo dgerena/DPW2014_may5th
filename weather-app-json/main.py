@@ -11,7 +11,7 @@ import urllib2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        #seting upi the basic page
+        #seting up the basic page
         view=FormPage()
         view.form_header="Open Weather Map Api App"
         view._css_url="css/main.css"
