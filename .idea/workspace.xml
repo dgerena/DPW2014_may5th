@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5af9a2-3662-4cb5-8ed0-2d6b1de678e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather-app-mvc/main.py" afterPath="$PROJECT_DIR$/weather-app-mvc/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather-app-mvc/page.py" afterPath="$PROJECT_DIR$/weather-app-mvc/page.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getters-setters/main.py" afterPath="$PROJECT_DIR$/getters-setters/main.py" />
     </list>
     <ignored path="DPW2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,10 +34,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weather-app-mvc/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="1945" selection-end="2022" vertical-scroll-proportion="0.62068963" vertical-offset="1014" max-vertical-offset="1826">
+            <state line="69" column="0" selection-start="1945" selection-end="2022" vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="1826">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2/lab2/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="1012">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getters-setters/index.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="396">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/getters-setters/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="18" selection-start="160" selection-end="160" vertical-scroll-proportion="0.18719211" vertical-offset="24" max-vertical-offset="1386">
               <folding />
             </state>
           </provider>
@@ -58,7 +84,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/dayOne/basic-syntax/story.py" />
-        <option value="$PROJECT_DIR$/getters-setters/main.py" />
         <option value="$PROJECT_DIR$/lab4_day4/app.yaml" />
         <option value="$PROJECT_DIR$/lab4_day4/js/main.js" />
         <option value="$PROJECT_DIR$/inheritance-abstraction/css/style.css" />
@@ -80,6 +105,7 @@
         <option value="$PROJECT_DIR$/weather-app-mvc/app.yaml" />
         <option value="$PROJECT_DIR$/weather-app-mvc/page.py" />
         <option value="$PROJECT_DIR$/weather-app-mvc/main.py" />
+        <option value="$PROJECT_DIR$/getters-setters/main.py" />
       </list>
     </option>
   </component>
@@ -158,7 +184,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="weather-app-mvc" />
+              <option name="myItemId" value="getters-setters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,11 +556,6 @@
         <state line="11" column="25" selection-start="412" selection-end="412" vertical-scroll-proportion="-9.68" vertical-offset="0" max-vertical-offset="440" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getters-setters/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="504" selection-end="504" vertical-scroll-proportion="0.5870394" vertical-offset="0" max-vertical-offset="1386" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inheritance-abstraction/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="-8.8" vertical-offset="0" max-vertical-offset="638" />
@@ -679,7 +700,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weather-app-mvc/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1945" selection-end="2022" vertical-scroll-proportion="0.62068963" vertical-offset="1014" max-vertical-offset="1826">
+        <state line="69" column="0" selection-start="1945" selection-end="2022" vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="1826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/lab2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="1012">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getters-setters/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getters-setters/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="160" selection-end="160" vertical-scroll-proportion="0.18719211" vertical-offset="24" max-vertical-offset="1386">
           <folding />
         </state>
       </provider>
