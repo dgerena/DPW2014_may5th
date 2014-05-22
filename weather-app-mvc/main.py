@@ -21,24 +21,32 @@ class MainHandler(webapp2.RequestHandler):
             self.__code = self.request.GET['code']
             w_model=WeatherModel() #creates a instance of the model
             w_model.code=self.request.GET['code'] # passes the url var into the model
-            w_model.send_req() #connect to API
+            w_model.send_req() # connect to API
 
-        #     #look at elements within the xml
-        #     list = xmldoc.getElementsByTagName('yweather:forecast')
-        #     c= xmldoc.getElementsByTagName('title')[2].firstChild.nodeValue+"<br />"
-        #     for item in list:
-        #         c += item.attributes['day'].value
-        #         c += " | High of: "+item.attributes['high'].value
-        #         c += " | Low of: "+item.attributes['low'].value
-        #         c += " | Condition: "+item.attributes['text'].value
-        #         c += '<br /><img src="images/'+item.attributes['self.__code'].value+'.png" />'
-        #         c += '<br />'
-        #
-        #     # self.response.write(c)
-        #     view.page_content=c #passes that string into our form content
-        #
-        # #print out
+            w_view = WeatherView()# the view thats going to show my info
+            w_view.wdo = w_model.wdo # transfers from model to view
+            w_view.update()
+            view.page_content = w_view._content
+
         self.response.write(view.print_out())
+
+class WeatherView(object):
+    '''This classs is showing JUST the weather information from the API'''
+    def __init__(self):
+        self.wdo=WeatherDataObject() #this just makes THIS WDO a type OF WeatherdataObject
+        self._content=""
+    def update(self):
+        self._content='''
+        <div>
+            <h3>{self.wdo.location}</h3>
+            <ul>
+                <li><strong>Teperature:</strong> {self.wdo.temp}</li>
+                <li><strong>Conditions:</strong> {self.wdo.condition}</li>
+
+            </ul>
+        </div>'''
+        self._content=self._content.format(**locals())
+        print self._content
 
 class WeatherModel(object):
     '''This is the weather model handles data requests and sorting of data from api.'''
@@ -61,7 +69,14 @@ class WeatherModel(object):
         self.__wdo.condition=condition[0].attributes['text'].value
         self.__wdo.temp=condition[0].attributes['temp'].value
         self.__wdo.code=condition[0].attributes['code'].value
-        # print condition[0].attributes['text'].value
+        locat=xmldoc.getElementsByTagName('yweather:location')
+        self.__wdo.location= locat[0].attributes['city'].value
+        print self.__wdo.location
+
+    #dont want anyone overwriting my data object... so im making a property with just a getter.
+    @property
+    def wdo(self):
+        return self.__wdo
 
 # '''nodes:
 #     <tag>

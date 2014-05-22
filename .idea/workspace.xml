@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f5af9a2-3662-4cb5-8ed0-2d6b1de678e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather-app-mvc/main.py" afterPath="$PROJECT_DIR$/weather-app-mvc/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather-app-mvc/page.py" afterPath="$PROJECT_DIR$/weather-app-mvc/page.py" />
     </list>
     <ignored path="DPW2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weather-app-mvc/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="11" selection-start="2533" selection-end="2575" vertical-scroll-proportion="1.5975308" vertical-offset="70" max-vertical-offset="2178">
+            <state line="41" column="16" selection-start="1403" selection-end="1403" vertical-scroll-proportion="-13.25" vertical-offset="509" max-vertical-offset="2508">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weather-app-mvc/page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="0" selection-start="1945" selection-end="2022" vertical-scroll-proportion="0.62068963" vertical-offset="1014" max-vertical-offset="1826">
               <folding />
             </state>
           </provider>
@@ -68,6 +78,7 @@
         <option value="$PROJECT_DIR$/beer/app.yaml" />
         <option value="$PROJECT_DIR$/beer/main.py" />
         <option value="$PROJECT_DIR$/weather-app-mvc/app.yaml" />
+        <option value="$PROJECT_DIR$/weather-app-mvc/page.py" />
         <option value="$PROJECT_DIR$/weather-app-mvc/main.py" />
       </list>
     </option>
@@ -661,7 +672,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weather-app-mvc/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="11" selection-start="2533" selection-end="2575" vertical-scroll-proportion="1.5975308" vertical-offset="70" max-vertical-offset="2178">
+        <state line="41" column="16" selection-start="1403" selection-end="1403" vertical-scroll-proportion="-13.25" vertical-offset="509" max-vertical-offset="2508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-app-mvc/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="1945" selection-end="2022" vertical-scroll-proportion="0.62068963" vertical-offset="1014" max-vertical-offset="1826">
           <folding />
         </state>
       </provider>

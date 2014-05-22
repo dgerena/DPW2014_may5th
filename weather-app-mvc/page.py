@@ -67,6 +67,12 @@ class FormPage(Page):
         self.all = self._open + self.form_header+self.__form_open+self.__inputs+self.__form_close+self.page_content+self._close
         self.all = self.all.format(**locals())
 
+class WeatherView(Page):
+
+    def __init__(self):
+        Page.__init__(self)
+
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
