@@ -52,19 +52,17 @@ class FormPage(Page):
         #call the supers init
         Page.__init__(self)
         #alternate way is super(FormPage,self).__init__()
-        self.__form_open='<form method="get" action="">'
+        self.__form_open='<form method="get" action=""><select>'
         #should use a apropriate loop to make inputs dynamic based off of given arguments.
-        self.__inputs='''
-        <input type='text' name='code' placeholder="City, Country Code" />
-        <input type='submit' name='submit' />
+        self._inputs='''
         '''
-        self.__form_close='</form>'
+        self.__form_close='</select class="btn"></form>'
         self.form_header=">>Form Header<<"
         self.page_content=''
-        self._content=self.form_header+self.__form_open+self.__inputs+self._close
+        self._content=self.form_header+self.__form_open+self._inputs+self._close
 
     def update(self):
-        self.all = self._open + self.form_header+self.__form_open+self.__inputs+self.__form_close+self.page_content+self._close
+        self.all = self._open + self.form_header+self.__form_open+self._inputs+self.__form_close+self.page_content+self._close
         self.all = self.all.format(**locals())
 
 app = webapp2.WSGIApplication([
