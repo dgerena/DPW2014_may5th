@@ -15,10 +15,14 @@ class MainHandler(webapp2.RequestHandler):
         # glassware section
         glassObj=self.Glassware()
         dataObj= self.data()
-        print dataObj
+        pint=5
+        # beer glass keys of note. totalResults,
+        BeerGlassSearch=self.BeerSearch(pint)
+        # BeerGlassSearch['data'][0] this wil return the first search result for a *beer *search of *pint
+        print BeerGlassSearch['data'][0]
         k=''
         for i in glassObj['data']:
-            k+='<option >'+str(i['name'])+'</option>'
+            k+='<option href="/?'+str(i['name'])+' >'+str(i['name'])+'</option>'
         view._inputs=k
         self.response.write(str(view.print_out()))
 
@@ -35,9 +39,15 @@ class MainHandler(webapp2.RequestHandler):
         return obj
 
     def data(self):
-        look="glassware"
-        params=''
         url ="http://api.brewerydb.com/v2/?key=0a1a3d54ec43b25abe64eaaff2c12970"
+        req =urllib2.Request(url)
+        opener = urllib2.build_opener()
+        data=opener.open(req)
+        obj=json.load(data)
+        return obj
+
+    def BeerSearch(self,glassId):
+        url ="http://api.brewerydb.com/v2/beers?key=0a1a3d54ec43b25abe64eaaff2c12970&glasswareId="+str(glassId)
         req =urllib2.Request(url)
         opener = urllib2.build_opener()
         data=opener.open(req)
