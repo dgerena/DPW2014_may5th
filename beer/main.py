@@ -16,15 +16,20 @@ class MainHandler(webapp2.RequestHandler):
         glassObj=self.Glassware()
         dataObj= self.data()
         pint=5
-        # beer glass keys of note. totalResults,
+        # beer glass keys of note. totalResults,data[]<this will let you choose a result
         BeerGlassSearch=self.BeerSearch(pint)
-        # BeerGlassSearch['data'][0] this wil return the first search result for a *beer *search of *pint
-        print BeerGlassSearch['data'][0]
+
+        # BeerGlassSearch['data'][0] this wil return the first(array num 0) search result for a *beer *search of *pint
+        # available gives a obj that has a descript. and name stating weather year round or otherwise.
+        print BeerGlassSearch['data'][0]['available']
         k=''
         for i in glassObj['data']:
             k+='<option href="/?'+str(i['name'])+' >'+str(i['name'])+'</option>'
+        h=''
+        for j in BeerGlassSearch['data']:
+            h+='<div>'+str(j)+'</div>'
         view._inputs=k
-        self.response.write(str(view.print_out()))
+        self.response.write(str(view.print_out())+str(h))
 
 
 
