@@ -19,7 +19,6 @@ class Page(object):
         pass
 
     def index(self,arr):
-
         select = '<form method="get" action="/"><select>'
         for obj in arr:
             select = select + '<option value="'+str(obj['id'])+'">'+obj['name']+'</option>'
