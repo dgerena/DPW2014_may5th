@@ -20,10 +20,10 @@ class Page(object):
 
     def index(self,arr):
 
-        select = '<select>'
+        select = '<form method="get" action="/"><select>'
         for obj in arr:
             select = select + '<option value="'+str(obj['id'])+'">'+obj['name']+'</option>'
-        select = select + '</select>'
+        select = select + '</select><button>FIND EPIC DRANK!</button></form>'
         return self.head+select+self.foot
 
 class GetDo(object):
