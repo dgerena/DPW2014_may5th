@@ -11,9 +11,10 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         page=Page()
         get=GetDo()
-
-        page.index(get.GetGlass())
-        self.response.write(page.index(get.GetGlass()))
+        if self.request.GET:
+            self.response.write(page.Content(get.GetGlass(self.request.GET['glasswareId'])))
+        else:
+            self.response.write(page.Body())
 
 # SOooo ya... i did it wrong again..... gdamnit....
 #         view = FormPage()

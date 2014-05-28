@@ -1,0 +1,32 @@
+*{
+    background-color: transparent;
+}
+html{
+    background-image: url(../image/white-wood.jpg)
+}
+body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+header,section{
+    margin-top:5px;
+    background-color: rgba(180,180,180,0.6);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+section{
+    margin-bottom: 5px;
+}
+article{
+    margin: 10px;
+    background-color: white;
+    box-shadow:1px 1px 8px inset;
+}
+button{
+    height: 2em;
+}
+p{
+    padding-top:5px;
+}

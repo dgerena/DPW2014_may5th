@@ -4,26 +4,47 @@ import json
 class Page(object):
     def __init__(self):
         self.head="""<!Doctype html>
+<!Doctype html>
 <html>
     <head>
+        <title>Beer for drinker</title>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="{self.css_url}" />
-        <title>{self.title}</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
-    <body>
+    <body class=" col-md-offset-2 col-md-8">
+    <header class="col-md-12">
+        <h1 class="col-md-4 col-sm-4">Beer</h1>
+        <p class="col-md-8 col-sm-8">For the Beer Enthusiast, a Match made in Glass.</p>
+        <form class="col-md-8 col-sm-8" method="get" action="/">
+            <select name="glasswareId" class="col-md-4">
+                <option value="1">Flute</option><option value="2">Goblet</option><option value="3">Mug</option><option value="4">Pilsner</option><option value="5">Pint</option><option value="6">Snifter</option><option value="7">Stange</option><option value="8">Tulip</option><option value="9">Weizen</option><option value="10">Oversized Wine Glass</option><option value="13">Willi</option><option value="14">Thistle
+                </option>
+            </select>
+            <button class="btn btn-default col-md-4">FIND EPIC DRANK!</button>
+        </form>
+    </header>
 """
         self.foot="""
     </body>
 </html>"""
     def Body(self):
-        pass
+        return self.head+self.foot
 
-    def index(self,arr):
-        select = '<form method="get" action="/"><select>'
+    def Content(self,arr):
+        description = ""
+        content= u'<section class="col-md-12 col-sm-12" >'
         for obj in arr:
-            select = select + '<option value="'+str(obj['id'])+'">'+obj['name']+'</option>'
-        select = select + '</select><button>FIND EPIC DRANK!</button></form>'
-        return self.head+select+self.foot
+            name = obj['name']
+            description = obj.pop("description", "Sorry no description set by retailer, but the best description can be found with your own palate.")
+            content = content + u"""
+            <article class="col-md-12">
+                <h3 class="col-md-4">{name}</h3>
+                <p class="col-md-8">{description}</p>
+            </article>"""
+            content = content.format(**locals())
+        content = content + u"</section>"
+
+        return self.head+content+self.foot
 
 class GetDo(object):
     def __init__(self):
@@ -37,8 +58,8 @@ class GetDo(object):
         self.data=self.opener.open(self.req)
         self.obj=json.load(self.data)
 
-    def GetGlass(self):
-        self.Get('glassware','')
+    def GetGlass(self,glasswareId):
+        self.Get('beers','&glasswareId='+glasswareId)
         return self.obj['data']
 
 # class Page(object):
