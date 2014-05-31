@@ -9,12 +9,12 @@ from page import *
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        page=Page()
+        view=BeerView()
         get=GetDo()
         if self.request.GET:
-            self.response.write(page.Content(get.GetGlass(self.request.GET['glasswareId'])))
+            self.response.write(view.Content(get.GetGlass(self.request.GET['glasswareId'])))
         else:
-            self.response.write(page.Body())
+            self.response.write(view.Content(""))
 
 # SOooo ya... i did it wrong again..... gdamnit....
 #         view = FormPage()

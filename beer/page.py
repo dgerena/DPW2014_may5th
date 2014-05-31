@@ -4,7 +4,6 @@ import json
 class Page(object):
     def __init__(self):
         self.head="""<!Doctype html>
-<!Doctype html>
 <html>
     <head>
         <title>Beer for drinker</title>
@@ -12,39 +11,23 @@ class Page(object):
         <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
     <body class=" col-md-offset-2 col-md-8">
-    <header class="col-md-12">
-        <h1 class="col-md-4 col-sm-4">Beer</h1>
-        <p class="col-md-8 col-sm-8">For the Beer Enthusiast, a Match made in Glass.</p>
-        <form class="col-md-8 col-sm-8" method="get" action="/">
-            <select name="glasswareId" class="col-md-4">
-                <option value="1">Flute</option><option value="2">Goblet</option><option value="3">Mug</option><option value="4">Pilsner</option><option value="5">Pint</option><option value="6">Snifter</option><option value="7">Stange</option><option value="8">Tulip</option><option value="9">Weizen</option><option value="10">Oversized Wine Glass</option><option value="13">Willi</option><option value="14">Thistle
-                </option>
-            </select>
-            <button class="btn btn-default col-md-4">FIND EPIC DRANK!</button>
-        </form>
-    </header>
-"""
+        <header class="col-md-12">
+            <h1 class="col-md-4 col-sm-4">Beer</h1>
+            <p class="col-md-8 col-sm-8">For the Beer Enthusiast, a Match made in Glass.</p>
+            <form class="col-md-8 col-sm-8" method="get" action="/">
+                <select name="glasswareId" class="col-md-4">
+                    <option value="1">Flute</option><option value="2">Goblet</option><option value="3">Mug</option><option value="4">Pilsner</option><option value="5">Pint</option><option value="6">Snifter</option><option value="7">Stange</option><option value="8">Tulip</option><option value="9">Weizen</option><option value="10">Oversized Wine Glass</option><option value="13">Willi</option><option value="14">Thistle
+                    </option>
+                </select>
+                <button class="btn btn-default col-md-4">FIND EPIC DRANK!</button>
+            </form>
+            <h2 class="col-md-12"> Select your Glass above to find the perfect libation for your chalice at hand.</h2>
+        </header>"""
         self.foot="""
     </body>
 </html>"""
     def Body(self):
         return self.head+self.foot
-
-    def Content(self,arr):
-        description = ""
-        content= u'<section class="col-md-12 col-sm-12" >'
-        for obj in arr:
-            name = obj['name']
-            description = obj.pop("description", "Sorry no description set by retailer, but the best description can be found with your own palate.")
-            content = content + u"""
-            <article class="col-md-12">
-                <h3 class="col-md-4">{name}</h3>
-                <p class="col-md-8">{description}</p>
-            </article>"""
-            content = content.format(**locals())
-        content = content + u"</section>"
-
-        return self.head+content+self.foot
 
 class GetDo(object):
     def __init__(self):
@@ -61,6 +44,38 @@ class GetDo(object):
     def GetGlass(self,glasswareId):
         self.Get('beers','&glasswareId='+glasswareId)
         return self.obj['data']
+
+class BeerView(Page):
+    def __int__(self):
+        Page.__init__(self)
+
+    def Content(self,arr):
+        description = ""
+        content= u'<section class="col-md-12 col-sm-12" >'
+        dataArr=arr
+        for obj in arr:
+            # dataArr=[]
+            # dataArr=dataArr+[obj]
+            # print dataArr[0]['name']
+            # instead of looking for it create the key value of labels if it doesnt exist
+            name = obj['name']
+            try:
+                icon = obj['labels']['medium']
+                print obj['labels']['large']
+            except:
+                pass
+
+            description = obj.pop("description", "Sorry no description set by retailer, but the best description can be found with your own palate.")
+            content = content + u"""
+            <article class="col-md-12">
+                <h3 class="col-md-4"><img style="background-image:url({icon})" src="{icon}"/>{name}</h3>
+                <p class="col-md-8">{description}</p>
+            </article>"""
+            content = content.format(**locals())
+        content = content + u"</section>"
+
+        return self.head +content+self.foot
+
 
 # class Page(object):
 #     def __init__(self):

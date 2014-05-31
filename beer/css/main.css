@@ -2,9 +2,11 @@
     background-color: transparent;
 }
 html{
-    background-image: url(../image/white-wood.jpg)
+    background-image: url(../image/white-wood.jpg);
+    background-color: rgba(0,0,0,0.3);
 }
 body{
+    background-color: #D6B23F;
     margin-top: 10px;
     margin-bottom: 10px;
     border:1px solid #ccc;
@@ -13,20 +15,38 @@ body{
 header,section{
     margin-top:5px;
     background-color: rgba(180,180,180,0.6);
-    border: 1px solid #ccc;
+    border: 1px solid #B93;
     border-radius: 5px;
 }
 section{
     margin-bottom: 5px;
+    padding: 0;
 }
 article{
-    margin: 10px;
+    margin: 10px 0;
     background-color: white;
     box-shadow:1px 1px 8px inset;
+}
+h2{
+    padding:10px;
+    font-size:1.28em;
+}
+img{
+    margin: auto;
+    display: block;
+    height: 220px;
+    color: white;
 }
 button{
     height: 2em;
 }
-p{
+article p{
+    margin-top: 50px;
     padding-top:5px;
+}
+h3{
+    text-align: center; 
+}
+ul{
+    padding: 0;
 }

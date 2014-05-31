@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5af9a2-3662-4cb5-8ed0-2d6b1de678e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getters-setters/main.py" afterPath="$PROJECT_DIR$/getters-setters/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beer/image/white-wood.jpg" afterPath="$PROJECT_DIR$/beer/image/white-wood.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beer/css/main.css" afterPath="$PROJECT_DIR$/beer/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beer/main.py" afterPath="$PROJECT_DIR$/beer/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beer/page.py" afterPath="$PROJECT_DIR$/beer/page.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/beer/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather-app-json/.idea/workspace.xml" afterPath="$PROJECT_DIR$/weather-app-json/.idea/workspace.xml" />
     </list>
     <ignored path="DPW2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +30,44 @@
     <favorites_list name="DPW2014" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="22" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beer/page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="44" selection-start="2560" selection-end="2560" vertical-scroll-proportion="1.7704486" vertical-offset="0" max-vertical-offset="3212">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather-app-json/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="75" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather-app-json/page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="27" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1694">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -55,11 +98,12 @@
         <option value="$PROJECT_DIR$/quiz-day5-damasio-eli-gerena/main.py" />
         <option value="$PROJECT_DIR$/weather-app-json/main.py" />
         <option value="$PROJECT_DIR$/beer/app.yaml" />
-        <option value="$PROJECT_DIR$/beer/main.py" />
         <option value="$PROJECT_DIR$/weather-app-mvc/app.yaml" />
         <option value="$PROJECT_DIR$/weather-app-mvc/page.py" />
         <option value="$PROJECT_DIR$/weather-app-mvc/main.py" />
         <option value="$PROJECT_DIR$/getters-setters/main.py" />
+        <option value="$PROJECT_DIR$/beer/main.py" />
+        <option value="$PROJECT_DIR$/beer/page.py" />
       </list>
     </option>
   </component>
@@ -116,6 +160,30 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="DPW2014" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPW2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPW2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPW2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPW2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -328,13 +396,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10555556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14444445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -342,11 +410,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -363,9 +431,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -387,9 +455,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/weather-app/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
-          <folding />
-        </state>
+        <state line="25" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weather-app/main.py">
@@ -524,9 +590,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class6work/forecastrss.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="119" selection-start="261" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1320">
-          <folding />
-        </state>
+        <state line="5" column="119" selection-start="261" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1320" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weather-app/index.yaml">
@@ -546,42 +610,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weather-app/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="189" selection-end="189" vertical-scroll-proportion="0.27088037" vertical-offset="0" max-vertical-offset="2310">
-          <folding />
-        </state>
+        <state line="8" column="22" selection-start="189" selection-end="189" vertical-scroll-proportion="0.27088037" vertical-offset="0" max-vertical-offset="2310" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quiz-day5-damasio-eli-gerena/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.3089245" vertical-offset="0" max-vertical-offset="874">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.3089245" vertical-offset="0" max-vertical-offset="874" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quiz-day5-damasio-eli-gerena/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="35" selection-start="214" selection-end="214" vertical-scroll-proportion="0.18870193" vertical-offset="143" max-vertical-offset="2010">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
-          <folding />
-        </state>
+        <state line="10" column="35" selection-start="214" selection-end="214" vertical-scroll-proportion="0.18870193" vertical-offset="143" max-vertical-offset="2010" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weather-app-json/index.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/beer/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="148" selection-end="148" vertical-scroll-proportion="0.2791762" vertical-offset="86" max-vertical-offset="960">
+        <state line="11" column="14" selection-start="148" selection-end="148" vertical-scroll-proportion="0.2791762" vertical-offset="86" max-vertical-offset="960" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-app-mvc/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getters-setters/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="14" selection-start="642" selection-end="642" vertical-scroll-proportion="0.13546798" vertical-offset="528" max-vertical-offset="1386" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getters-setters/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/lab2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.18666667" vertical-offset="154" max-vertical-offset="1012" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-app-mvc/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="1945" selection-end="2022" vertical-scroll-proportion="0.62666667" vertical-offset="1001" max-vertical-offset="1826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-app-mvc/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="16" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.4732143" vertical-offset="509" max-vertical-offset="2508" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-app-json/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="27" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1694">
           <folding />
         </state>
       </provider>
@@ -595,49 +679,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/beer/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.6772009" vertical-offset="30" max-vertical-offset="1200">
+        <state line="9" column="22" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather-app-mvc/app.yaml">
+    <entry file="file://$PROJECT_DIR$/beer/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getters-setters/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="14" selection-start="642" selection-end="642" vertical-scroll-proportion="0.13546798" vertical-offset="528" max-vertical-offset="1386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getters-setters/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/lab2/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.18666667" vertical-offset="154" max-vertical-offset="1012">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-app-mvc/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1945" selection-end="2022" vertical-scroll-proportion="0.62666667" vertical-offset="1001" max-vertical-offset="1826">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-app-mvc/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="16" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.4732143" vertical-offset="509" max-vertical-offset="2508">
+        <state line="62" column="44" selection-start="2560" selection-end="2560" vertical-scroll-proportion="1.7704486" vertical-offset="0" max-vertical-offset="3212">
           <folding />
         </state>
       </provider>
