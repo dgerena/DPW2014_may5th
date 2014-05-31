@@ -60,6 +60,7 @@ class BeerView(Page):
             # instead of looking for it create the key value of labels if it doesnt exist
             name = obj['name']
             try:
+                # so were using the try  and it works amazingly.
                 icon = obj['labels']['medium']
                 print obj['labels']['large']
             except:
