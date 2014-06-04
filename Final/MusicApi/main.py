@@ -14,10 +14,10 @@ class MainHandler(webapp2.RequestHandler):
         html=View()
         html._content='''<h1>test</h1>'''
         # jObj=Model().pRet()['songs']['track'][0]
-        # testArr=Model().aRet
-        # testArr()
-        test=dO
-        print test.Ret()
+        testArr=Model().aRet
+        testArr()
+        self.test=dO
+        print testArr
         self.response.write(html.Print())
 
 

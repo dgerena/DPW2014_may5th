@@ -17,15 +17,15 @@ class Model(object):
 
     def aRet(self):
         testArr=[]
-        for i in self.pRet()['songs']['track']:
+        for i in self.pRet()['songs']['track'][0]:
             print testArr[i['title']]
-        # return self.objArr
+        return testArr
 
 # create class to .syntax the different keys to .syntax values.
 
 class dO(object):
     def __init__(self):
-        self.data= Model.pRet()
+        self.data= Model()
 
     def Ret(self):
         return  self.data
