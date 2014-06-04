@@ -29,9 +29,13 @@ class DO(object):
         self.tList =''
         # print self.__data
         this=''
-        for each in self.__data:
-            this=this+ each['artist']
-        print this[(range(0,10))]
+
+        try:
+            for each in self.__data:
+                this=this+ str({u'title':each['title'],u'artist':each['artist'],u'length':each['length'],u'year':each['year'],u'label':each['label']})
+        finally:
+            pass
+        print this[3]
             # title=getattr(each,'title')
             # self.tList=self.tList+title
 
