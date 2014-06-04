@@ -5,13 +5,17 @@
 import webapp2
 import json
 import urllib2
-import lib
+from lib import *
 
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        html=lib.View()
+        stuff="<h1>hello</h1>"
+        html=View()
+        html._content='''<h1>test</h1>'''
         self.response.write(html.Print())
+        test= Model()
+        print test
 
 
 app = webapp2.WSGIApplication([

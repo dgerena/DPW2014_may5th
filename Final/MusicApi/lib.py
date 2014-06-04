@@ -1,6 +1,16 @@
+import webapp2
+import json
+import urllib2
+
 class Model(object):
     def __init__(self):
-        pass
+        #get info
+        self.url = urllib2.Request("http://rebeccacarroll.com/api/music/music.json")
+        self.opener = urllib2.build_opener()
+        self.jObj= self.opener.open(self.url)
+
+    def jObj(self):
+        return json.load(self.jObj)
 
 class View(object):
     def __init__(self):
@@ -26,10 +36,14 @@ class View(object):
     </body>
 </html>'''
 
-    @getter
+    @property
     def Content(self):
-        self.
+        pass
+
+    @Content.setter
+    def Content(self):
+        return self._content
 
     def Print(self):
-        self.page=self.__open+self.content+self.__close
+        self.page=self.__open+self._content+self.__close
         return self.page
