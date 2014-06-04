@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MusicApi/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="384" selection-end="384" vertical-scroll-proportion="-6.9259257" vertical-offset="0" max-vertical-offset="638">
+            <state line="19" column="24" selection-start="444" selection-end="444" vertical-scroll-proportion="0.54215306" vertical-offset="0" max-vertical-offset="771">
               <folding>
                 <element signature="e#85#99#0" expanded="true" />
               </folding>
@@ -34,12 +34,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="lib.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MusicApi/lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="45" selection-start="281" selection-end="281" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="1188">
+            <state line="30" column="12" selection-start="702" selection-end="702" vertical-scroll-proportion="-9.37037" vertical-offset="154" max-vertical-offset="1694">
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#1#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +65,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/MusicApi/app.yaml" />
-        <option value="$PROJECT_DIR$/MusicApi/main.py" />
         <option value="$PROJECT_DIR$/MusicApi/lib.py" />
+        <option value="$PROJECT_DIR$/MusicApi/main.py" />
       </list>
     </option>
   </component>
@@ -324,7 +324,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MusicApi/app.yaml">
@@ -334,20 +336,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MusicApi/main.py">
+    <entry file="file://$PROJECT_DIR$/MusicApi/lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="384" selection-end="384" vertical-scroll-proportion="-6.9259257" vertical-offset="0" max-vertical-offset="638">
+        <state line="30" column="12" selection-start="702" selection-end="702" vertical-scroll-proportion="-9.37037" vertical-offset="154" max-vertical-offset="1694">
           <folding>
-            <element signature="e#85#99#0" expanded="true" />
+            <element signature="e#1#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MusicApi/lib.py">
+    <entry file="file://$PROJECT_DIR$/MusicApi/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="281" selection-end="281" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="1188">
+        <state line="19" column="24" selection-start="444" selection-end="444" vertical-scroll-proportion="0.54215306" vertical-offset="0" max-vertical-offset="771">
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#85#99#0" expanded="true" />
           </folding>
         </state>
       </provider>
