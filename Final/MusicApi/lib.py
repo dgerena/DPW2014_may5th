@@ -23,12 +23,30 @@ class Model(object):
 
 # create class to .syntax the different keys to .syntax values.
 
-class dO(object):
+class DO(object):
     def __init__(self):
-        self.data= Model()
+        self.__data = Model().pRet()
+        self.tList =''
+        # print self.__data
+        this=''
+        for each in self.__data:
+            this=this+ each['artist']
+        print this[(range(0,10))]
+            # title=getattr(each,'title')
+            # self.tList=self.tList+title
 
-    def Ret(self):
-        return  self.data
+        # print self.tList
+
+
+        # for tracks in self.__data:
+        #     self.tList += str(tracks)
+        # # print self.tList
+
+    def ret(self):
+        # return self.tList
+        pass
+    # @property
+    # def
 
 class View(object):
     def __init__(self):

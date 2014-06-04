@@ -10,14 +10,12 @@ from lib import *
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        stuff="<h1>hello</h1>"
-        html=View()
+        stuff = "<h1>hello</h1>"
+        html = View()
         html._content='''<h1>test</h1>'''
-        # jObj=Model().pRet()['songs']['track'][0]
-        testArr=Model().aRet
-        testArr()
-        self.test=dO
-        print testArr
+        # jObj = Model().pRet()
+        test = DO()
+        print test.ret()
         self.response.write(html.Print())
 
 
