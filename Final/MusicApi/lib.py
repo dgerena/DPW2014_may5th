@@ -108,17 +108,16 @@ class View(object):
                     self._year = track[int(index)]['year']
                     self._cover = track[int(index)]['cover']
                 except:
-                    self._fileUrl = track[int(index)]['file']
+                    self._fileUrl = track[int(index)]['File']
                 finally:
                     pass
                     #     <li><audio src="{track.__file}></li>
 
 
-                content='<li><img src="'+self._cover+'"></li><h2>'+self._title+'</h2><ul><li>Artist: '+self._artist+'</li><li>Track Length: '+self._length+'</li><li>Year Produced: '+self._year+'</li><li><p><a href="'+track[0]['file']+'">Play Me If Available</a></p></li></ul>'
+                content='<li><img src="'+self._cover+'"></li><h2>'+self._title+'</h2><ul><li>Artist: '+self._artist+'</li><li>Track Length: '+self._length+'</li><li>Year Produced: '+self._year+'</li><li><p><a href="+self._fileUrl+">Play Me If Available</a></p></li></ul>'
             else:
                 pass
 
-            content=content.format(**locals())
             self._content=content
 
     def Print(self):

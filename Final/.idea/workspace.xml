@@ -37,7 +37,7 @@
       <file leaf-file-name="lib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MusicApi/lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="226" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.6226913" vertical-offset="2080" max-vertical-offset="2882">
+            <state line="110" column="20" selection-start="3080" selection-end="3086" vertical-scroll-proportion="0.41952506" vertical-offset="2102" max-vertical-offset="2860">
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
               </folding>
@@ -383,7 +383,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MusicApi/lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="226" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.6226913" vertical-offset="2080" max-vertical-offset="2882">
+        <state line="110" column="20" selection-start="3080" selection-end="3086" vertical-scroll-proportion="0.41952506" vertical-offset="2102" max-vertical-offset="2860">
           <folding>
             <element signature="e#1#12#0" expanded="true" />
           </folding>
