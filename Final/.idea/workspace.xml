@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MusicApi/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="24" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.9259257" vertical-offset="0" max-vertical-offset="660">
+            <state line="18" column="42" selection-start="474" selection-end="474" vertical-scroll-proportion="-5.888889" vertical-offset="78" max-vertical-offset="836">
               <folding>
                 <element signature="e#85#99#0" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="lib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MusicApi/lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="20" selection-start="995" selection-end="995" vertical-scroll-proportion="-0.73536897" vertical-offset="1392" max-vertical-offset="2178">
+            <state line="112" column="0" selection-start="3137" selection-end="3137" vertical-scroll-proportion="0.6226913" vertical-offset="1992" max-vertical-offset="2816">
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
               </folding>
@@ -131,6 +131,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/DPW2014" />
     <property name="FullScreen" value="true" />
     <property name="LayoutCode.rearrangeEntriesPlain text" value="false" />
+    <property name="SearchEverywhereHistory" value="''" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -338,7 +339,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MusicApi/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.9259257" vertical-offset="0" max-vertical-offset="660">
+        <state line="18" column="42" selection-start="474" selection-end="474" vertical-scroll-proportion="-5.888889" vertical-offset="78" max-vertical-offset="836">
           <folding>
             <element signature="e#85#99#0" expanded="true" />
           </folding>
@@ -347,7 +348,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MusicApi/lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="20" selection-start="995" selection-end="995" vertical-scroll-proportion="-0.73536897" vertical-offset="1392" max-vertical-offset="2178">
+        <state line="112" column="0" selection-start="3137" selection-end="3137" vertical-scroll-proportion="0.6226913" vertical-offset="1992" max-vertical-offset="2816">
           <folding>
             <element signature="e#1#12#0" expanded="true" />
           </folding>

@@ -28,33 +28,34 @@ class DO(object):
         self.__data = Model().pRet()
         self.tList =''
         # print self.__data
-        this=''
-
+        this=[{}]
+        count=0
         try:
+            this.pop(0)
             for each in self.__data:
-                this=this+ str({u'title':each['title'],u'artist':each['artist'],u'length':each['length'],u'year':each['year'],u'label':each['label']})
+                if each['title'] == "Satisfaction" or "Respect":
+                    this = this + [{u'index': count, u'cover':each['cover'],u'title':each['title'],u'artist':each['artist'],u'length':each['length'],u'year':each['year'],u'label':each['label']}]
+                else:
+                    this = this + [{u'index': count, u'file':each['file'],u'cover':each['cover'],u'title':each['title'],u'artist':each['artist'],u'length':each['length'],u'year':each['year'],u'label':each['label']}]
+                count=count+1
         finally:
             pass
-        print this[3]
-            # title=getattr(each,'title')
-            # self.tList=self.tList+title
-
-        # print self.tList
-
+        self.arWdict=this
 
         # for tracks in self.__data:
         #     self.tList += str(tracks)
         # # print self.tList
 
+    @property
     def ret(self):
-        # return self.tList
-        pass
-    # @property
-    # def
+        return self.arWdict
+
 
 class View(object):
-    def __init__(self):
-        # objArr=arr
+    def __init__(self,arr):
+        self.__objArr=arr
+        self.list=''
+
 
         self.__open='''
 <!Doctype html>
@@ -71,6 +72,8 @@ class View(object):
         <aside><ul>'''
 
         self.nav=""
+        for track in self.__objArr:
+            self.nav=self.nav+'<li><a href="?index='+str(track['index'])+'">'+str(track['title'])+'</a></li>'
 
         self.ulClose='''</ul></aside>'''
 
@@ -89,6 +92,32 @@ class View(object):
     def Content(self):
         return self._content
 
+    def tView(self,index):
+        track=self.__objArr
+        print index
+        print track[int(index)]
+        for each in track:
+            content=""
+            if each['index'] == track[int(index)]:
+                try:
+                    self._title = each['title']
+                    self._artist=each['artist']
+                    self._length=each['length']
+                    self._year=each['year']
+                    # self.__cover =each['cover']
+                    # self.__file=each['file']
+                finally:
+                    pass
+                    # <li><img src="{track.__cover}"></li>                    <li><audio src="{track.__file}></li>
+
+
+                content='<h2>{self._title}</h2><ul><li>Artist: '+self._artist+'</li><li>Track Length: '+self._length+'</li><li>Year Produced: '+self._year+'</li></ul>'
+            else:
+                pass
+
+            content=content.format(**locals())
+            self._content=content
+
     def Print(self):
-        self.page=self.__open+self._content+self.__close
+        self.page=self.__open+self.nav+self.ulClose+self._content+self.__close
         return self.page
