@@ -5,9 +5,6 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-- url: /css
-  static_dir: css
-
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
@@ -21,7 +18,3 @@ libraries:
 
 
 
-request: ['Host']
-{u'songs':
- {u'track': [
-            {u'artist': u'Bob Dylan', u'title': u'Like A Rolling Stone', u'cover': u'http://rebeccacarroll.com/api/music/covers/Bob_Dylan_-_Like_a_Rolling_Stone.jpg', u'label': u'Columbia', u'length': u'6:13', u'file': u'http://rebeccacarroll.com/api/music/mp3/rollingstone.mp3', u'year': u'1965'}, {u'artist': u'The Rolling Stones', u'title': u'Satisfaction', u'cover': u'http://rebeccacarroll.com/api/music/covers/Satisfaction-us.jpg', u'label': u'London', u'length': u'3:44', u'year': u'1965'}, {u'artist': u'John Lennon', u'title': u'Imagine', u'cover': u'http://rebeccacarroll.com/api/music/covers/JohnlennonImagine.jpg', u'label': u'Apple', u'length': u'3:03', u'file': u'http://rebeccacarroll.com/api/music/mp3/Imagine.mp3', u'year': u'1971'}, {u'artist': u'Marvin Gaye', u'title': u"What's Going On", u'cover': u'http://rebeccacarroll.com/api/music/covers/Whatsgoingonsingle.jpg', u'label': u'Tamla', u'length': u'3:40', u'file': u'http://rebeccacarroll.com/api/music/mp3/WhatsGoingOn.mp3', u'year': u'1970'}, {u'artist': u'Arethra Franklin', u'title': u'Respect', u'cover': u'http://rebeccacarroll.com/api/music/covers/ArethaRespect.jpg', u'label': u'Volt', u'length': u'2:08', u'year': u'1965'}, {u'artist': u'The Beach Boys', u'title': u'Good Vibrations', u'cover': u'http://rebeccacarroll.com/api/music/covers/Good_Vibrations_single.jpg', u'label': u'Capitol', u'length': u'3:39', u'file': u'http://rebeccacarroll.com/api/music/mp3/Good_Vibrations.mp3', u'year': u'1966'}, {u'artist': u'The Beatles', u'title': u'Hey Jude', u'cover': u'http://rebeccacarroll.com/api/music/covers/Hey_Jude_Beatles.jpg', u'label': u'Apple', u'length': u'7:11', u'-file': u'http://rebeccacarroll.com/api/music/mp3/Hey-Jude.mp3', u'year': u'1968'}, {u'artist': u'Nirvana', u'title': u'Smells Like Teen Spirit', u'cover': u'http://rebeccacarroll.com/api/music/covers/Smells_Like_Teen_Spirit.jpg', u'label': u'DGC', u'length': u'4:30', u'file': u'http://rebeccacarroll.com/api/music/mp3/smells-like-teen-spirit.mp3', u'year': u'1991'}, {u'artist': u'Ray Charles', u'title': u"What'd I Say", u'cover': u'http://rebeccacarroll.com/api/music/covers/Whatdisaycharles.jpg', u'label': u'Atlantic', u'length': u'6:30', u'year': u'1959'}]}}

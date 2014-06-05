@@ -96,22 +96,25 @@ class View(object):
         track=self.__objArr
         print index
         print track[int(index)]
+
+        content=""
         for each in track:
-            content=""
-            if each['index'] == track[int(index)]:
+            if track[int(index)]['index'] == each['index'] :
                 try:
-                    self._title = each['title']
-                    self._artist=each['artist']
-                    self._length=each['length']
-                    self._year=each['year']
-                    # self.__cover =each['cover']
-                    # self.__file=each['file']
+                    print "correct"
+                    self._title = track[int(index)]['title']
+                    self._artist = track[int(index)]['artist']
+                    self._length = track[int(index)]['length']
+                    self._year = track[int(index)]['year']
+                    self._cover = track[int(index)]['cover']
+                except:
+                    self._fileUrl = track[int(index)]['file']
                 finally:
                     pass
-                    # <li><img src="{track.__cover}"></li>                    <li><audio src="{track.__file}></li>
+                    #     <li><audio src="{track.__file}></li>
 
 
-                content='<h2>{self._title}</h2><ul><li>Artist: '+self._artist+'</li><li>Track Length: '+self._length+'</li><li>Year Produced: '+self._year+'</li></ul>'
+                content='<li><img src="'+self._cover+'"></li><h2>'+self._title+'</h2><ul><li>Artist: '+self._artist+'</li><li>Track Length: '+self._length+'</li><li>Year Produced: '+self._year+'</li><li><p><a href="'+track[0]['file']+'">Play Me If Available</a></p></li></ul>'
             else:
                 pass
 
